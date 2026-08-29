@@ -1,4 +1,6 @@
-<img src="PLC-fan_logo.png" alt="PLC Fanatic logó" width="320">
+<p align="center">
+  <img src="PLC-fan_logo.png" alt="PLC Fanatic logó" width="260">
+</p>
 
 # PLC Fanatic – PLC programozás kezdőknek
 
