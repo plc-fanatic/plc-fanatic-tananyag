@@ -19,7 +19,7 @@ Olvasd el az adott lecke rövid magyarázatát, nézd meg a kapcsolás működé
 
 ## Tananyag
 
-1. 1. **[Start–Stop és öntartás](01-start-stop/)**
+1. **[Start–Stop és öntartás](01-start-stop/)**
    Az alapvető indító–leállító vezérlés és az öntartás működése.
 
 2. **Időzítők**
