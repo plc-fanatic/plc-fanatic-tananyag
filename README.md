@@ -1,16 +1,17 @@
-## Hi there 👋
+# PLC Fanatic – PLC programozás kezdőknek
 
-<!--
-**plc-fanatic/plc-fanatic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Magyar nyelvű, **gyakorlatorientált PLC-oktatóanyag kezdőknek**.
 
-Here are some ideas to get you started:
+A tananyag a **PLCPractice** online PLC-szimulátorra épül, és lépésről lépésre vezet végig az alapvető **létradiagram-programozási** feladatokon.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Tananyag
+
+1. **Start–Stop és öntartás**
+2. **Időzítők**
+3. **Számlálók**
+4. **Reteszelés és sorrendi vezérlés**
+5. **Összetett gyakorlófeladat**
+
+## Gyakorlás
+
+👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
