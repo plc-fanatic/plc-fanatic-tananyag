@@ -1,3 +1,5 @@
+<img src="PLC-fan_logo.png" alt="PLC Fanatic logó" width="320">
+
 # PLC Fanatic – PLC programozás kezdőknek
 
 Magyar nyelvű, **gyakorlatorientált PLC-oktatóanyag kezdőknek**.
