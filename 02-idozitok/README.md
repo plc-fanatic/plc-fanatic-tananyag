@@ -101,6 +101,6 @@ Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd 
 
 ---
 
-Ha nem sikerül értelmezned a letöltött program működését vagy gondod van a PLCPractice szimulátor kezelésével, szívesen segítek. 
+Ha ***nem sikerül értelmezned a letöltött program működését*** vagy ***gondod van a PLCPractice szimulátor kezelésével***, szívesen segítek. 
 
-**[Írd meg itt a problémát! ](https://plc-fanatic.webnode.hu/kapcsolat/)**.
+**[Írd meg itt a problémát! ](https://plc-fanatic.webnode.hu/kapcsolat/)**
