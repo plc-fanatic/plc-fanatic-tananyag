@@ -30,11 +30,9 @@ Ebből a diák rögtön megérti:
 
 ![Késleltetett bekapcsolás TON időzítővel](kesl_ton.png)
 
-### PLCPractice projektfájl
+### PLCPractice projektfájl -> lásd: lejjebb!
 
-👉 [kesl_ton.json letöltése](kesl_ton.json)
-
-#### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+#### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján és próbáld ki!!!
 
 ---
 
@@ -63,9 +61,7 @@ Készíts olyan vezérlést, amelyben:
 
 ![Késleltetett motorindítás](kesl_motor.png)
 
-### PLCPractice projektfájl
-
-👉 [kesl_motor.json letöltése](kesl_motor.json)
+### PLCPractice projektfájl -> görgess lejjebb!
 
 ### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
 
@@ -74,3 +70,29 @@ Készíts olyan vezérlést, amelyben:
 ## Gyakorlás
 
 👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
+
+## Próbáld meg önállóan!
+
+Mielőtt megnézed vagy letöltöd a kész projektfájlt, **próbáld meg önállóan elkészíteni a kapcsolást a PLCPractice szimulátorban, majd próbáld ki a működését!**
+
+Ne aggódj, ha elsőre nem sikerül! A hibakeresés és a próbálkozás a PLC-programozás megtanulásának fontos része.
+
+### Elakadtál?
+
+Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldalon](https://plc-fanatic.webnode.hu/kapcsolat/)**.
+
+Írd meg:
+
+* melyik feladatnál akadtál el,
+* mit szerettél volna elérni,
+* mi történik helyette,
+* és lehetőleg küldj egy **képernyőképet a kapcsolásodról**.
+
+Így könnyebben meg tudjuk találni a hibát.
+
+### Kész vagy? Működik a megoldásod? 
+
+Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
+
+👉 [2.1 Projektfájl letöltése](kesl_ton.json)
+👉 [2.2 Pjektfájl letöltése](kesl_motor.json)
