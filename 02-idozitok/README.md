@@ -13,14 +13,14 @@ Készíts olyan vezérlést, amelyben:
 
 - a `Start` gomb megnyomására elindul az időzítés,
 - **3 másodperc elteltével** bekapcsol egy lámpa vagy kimenet,
-- ha a `Start` jelet az 5 másodperc letelte előtt megszünteted, az időzítő nullázódik,
+- ha a `Start` jelet az 3 másodperc letelte előtt megszünteted, az időzítő nullázódik,
 - a kimenet csak akkor kapcsoljon be, ha az 5 másodperc ténylegesen letelt.
 
 ### Mit tanít ez?
 
 Ebből rögtön megérted:
 
-- mi a **TON**, (Time On időzítő -> az idő leteltekor bekapcsol // késleltetés)
+- mi a **TON**, (Timer On Delay -> bekapcsolási késleltetés)
 - mi a **preset idő**,
 - mi történik időzítés közben,
 - mi a **done bit**,
@@ -46,7 +46,7 @@ Készíts olyan vezérlést, amelyben:
 - **5 másodperc késleltetés után** bekapcsol a motor,
 - a `Stop` gomb megnyomására a motor **azonnal leáll**,
 - `Stop` után az időzítő is alaphelyzetbe kerül,
-- újraindításkor ismét ki kell várni a 3 másodpercet.
+- újraindításkor ismét ki kell várni a 5 másodpercet.
 
 ### A működés sorrendje
 
