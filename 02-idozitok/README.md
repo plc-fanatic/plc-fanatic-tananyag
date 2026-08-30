@@ -52,7 +52,7 @@ Készíts olyan vezérlést, amelyben:
 
 1. `Start` → `Run` bekapcsol és öntartásba kerül.
 2. `Run` elindítja a `T1` időzítőt.
-3. 3 másodperc múlva `T1.DN = 1`.
+3. 5 másodperc múlva `T1.DN = 1`.
 4. Ekkor bekapcsol a `Motor`.
 5. `Stop` megszakítja az öntartást.
 6. A motor azonnal kikapcsol, az időzítő pedig nullázódik.
