@@ -20,7 +20,7 @@ Készíts olyan vezérlést, amelyben:
 
 Ebből a diák rögtön megérti:
 
-- mi a **TON**,
+- mi a **TON**, (Time On időzítő -> az idő leteltekor bekapcsol // késleltetés)
 - mi a **preset idő**,
 - mi történik időzítés közben,
 - mi a **done bit**,
@@ -33,6 +33,8 @@ Ebből a diák rögtön megérti:
 ### PLCPractice projektfájl
 
 👉 [kesl_ton.json letöltése](kesl_ton.json)
+
+#### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
 
 ---
 
