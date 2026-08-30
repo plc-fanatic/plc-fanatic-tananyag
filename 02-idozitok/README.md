@@ -14,7 +14,7 @@ Készíts olyan vezérlést, amelyben:
 - a `Start` gomb megnyomására elindul az időzítés,
 - **3 másodperc elteltével** bekapcsol egy lámpa vagy kimenet,
 - ha a `Start` jelet az 3 másodperc letelte előtt megszünteted, az időzítő nullázódik,
-- a kimenet csak akkor kapcsoljon be, ha az 5 másodperc ténylegesen letelt.
+- a kimenet csak akkor kapcsoljon be, ha az 3 másodperc ténylegesen letelt.
 
 ### Mit tanít ez?
 
