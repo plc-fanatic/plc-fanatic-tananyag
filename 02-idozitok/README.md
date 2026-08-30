@@ -12,7 +12,7 @@ Ebben a leckében a **TON időzítő** működését tanuljuk meg egyszerű és 
 Készíts olyan vezérlést, amelyben:
 
 - a `Start` gomb megnyomására elindul az időzítés,
-- **5 másodperc elteltével** bekapcsol egy lámpa vagy kimenet,
+- **3 másodperc elteltével** bekapcsol egy lámpa vagy kimenet,
 - ha a `Start` jelet az 5 másodperc letelte előtt megszünteted, az időzítő nullázódik,
 - a kimenet csak akkor kapcsoljon be, ha az 5 másodperc ténylegesen letelt.
 
@@ -45,7 +45,7 @@ Ebből a diák rögtön megérti:
 Készíts olyan vezérlést, amelyben:
 
 - a `Start` gomb megnyomására elindul a vezérlés,
-- **3 másodperc késleltetés után** bekapcsol a motor,
+- **5 másodperc késleltetés után** bekapcsol a motor,
 - a `Stop` gomb megnyomására a motor **azonnal leáll**,
 - `Stop` után az időzítő is alaphelyzetbe kerül,
 - újraindításkor ismét ki kell várni a 3 másodpercet.
