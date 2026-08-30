@@ -18,7 +18,7 @@ Készíts olyan vezérlést, amelyben:
 
 ### Mit tanít ez?
 
-Ebből a diák rögtön megérti:
+Ebből rögtön megérted:
 
 - mi a **TON**, (Time On időzítő -> az idő leteltekor bekapcsol // késleltetés)
 - mi a **preset idő**,
@@ -90,9 +90,17 @@ Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldal
 
 Így könnyebben meg tudjuk találni a hibát.
 
+---
+
 ### Kész vagy? Működik a megoldásod? 
 
 Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
 
 👉 [2.1 Projektfájl letöltése](kesl_ton.json)
 👉 [2.2 Pjektfájl letöltése](kesl_motor.json)
+
+---
+
+Ha nem sikerül értelmezned a letöltött program működését vagy gondod van a PLCPractice szimulátor kezelésével, szívesen segítek. 
+
+**[Írd meg itt a problémát! ](https://plc-fanatic.webnode.hu/kapcsolat/)**.
