@@ -65,6 +65,8 @@ Készíts olyan vezérlést, amelyben:
 
 👉 [kesl_motor.json letöltése](kesl_motor.json)
 
+### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+
 ---
 
 ## Gyakorlás
