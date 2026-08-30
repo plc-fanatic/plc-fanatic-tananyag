@@ -38,7 +38,7 @@ A `Stop` nyomógomb megszakítja az áramutat, ezért a kimenet kikapcsol, és a
 
 👉 [01_Start_Stop.json letöltése](01_Start_Stop.json)
 
-A fájl a PLCPractice szimulátorban betölthető.
+#### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
 
 ## Gyakorlás
 
