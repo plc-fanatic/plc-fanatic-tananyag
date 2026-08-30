@@ -1,0 +1,150 @@
+{
+  "id": "program-1787671982958",
+  "name": "Untitled Ladder Program",
+  "version": 1,
+  "tags": [
+    {
+      "name": "Start",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Stop",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Motor",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "rung-1788076100640-thtph9",
+      "comment": "Start és Stop gomb működése",
+      "elements": [
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Start"
+              }
+            ],
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Motor"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Motor"
+        }
+      ]
+    }
+  ],
+  "hmiLayout": [
+    {
+      "id": "widget-1788076263252-huz4sx",
+      "type": "pushbutton",
+      "position": {
+        "x": 180,
+        "y": 80
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "bindings": {
+        "tag": "Start"
+      },
+      "config": {
+        "mode": "momentary",
+        "color": "green",
+        "label": "start"
+      }
+    },
+    {
+      "id": "widget-1788076266457-sdcvkk",
+      "type": "pushbutton",
+      "position": {
+        "x": 320,
+        "y": 80
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "bindings": {
+        "tag": "Stop"
+      },
+      "config": {
+        "mode": "momentary",
+        "color": "red",
+        "label": "stop"
+      }
+    },
+    {
+      "id": "widget-1788076273735-znotk8",
+      "type": "indicator-light",
+      "position": {
+        "x": 480,
+        "y": 80
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "bindings": {
+        "tag": "Motor"
+      },
+      "config": {
+        "activeColor": "yellow",
+        "inactiveColor": "gray",
+        "label": "Motor"
+      }
+    },
+    {
+      "id": "widget-1788076439288-4n02l3",
+      "type": "numeric-display",
+      "position": {
+        "x": 620,
+        "y": 100
+      },
+      "size": {
+        "width": 120,
+        "height": 60
+      },
+      "bindings": {
+        "value": "Érték"
+      },
+      "config": {
+        "label": "Érték",
+        "displayType": "decimal",
+        "decimalPlaces": 0,
+        "decimalOffset": 0,
+        "unitCategory": "none",
+        "unit": ""
+      }
+    }
+  ]
+}
