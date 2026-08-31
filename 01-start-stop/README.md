@@ -34,12 +34,6 @@ A kimenet saját segédérintkezője párhuzamosan kapcsolódik a Start nyomógo
 A `Stop` nyomógomb megszakítja az áramutat, ezért a kimenet kikapcsol, és az öntartás megszűnik.
 
 
-## PLCPractice projektfájl
-
-👉 [01_Start_Stop.json letöltése](01_Start_Stop.json)
-
-#### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
-
 ## Gyakorlás
 
 👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
@@ -68,3 +62,14 @@ Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldal
 ### Kész vagy? Működik a megoldásod? 
 
 Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
+
+👉 [1. Projektfájl letöltése](01_Start_Stop.json)
+
+---
+
+Ha ***nem sikerül értelmezned a letöltött program működését*** vagy ***gondod van a PLCPractice szimulátor kezelésével***, szívesen segítek. 
+
+<p align="center">
+  👉 <a href="https://plc-fanatic.webnode.hu/kapcsolat"><b>Írj ide, ha kérdésed van!</b></a>
+</p>
+
