@@ -31,6 +31,10 @@ Szamlalo.Done → ( Lamp )
 
 A Reset nullázza a számlálót és kikapcsolja a lámpát.
 
+### Megoldás
+
+![Késleltetett motorindítás](szlo_alap.png)
+
 ************************
 
 ## 3.2 – Darabszámlálás szállítószalagon
