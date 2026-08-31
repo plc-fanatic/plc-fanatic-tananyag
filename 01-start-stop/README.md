@@ -43,3 +43,28 @@ A `Stop` nyomógomb megszakítja az áramutat, ezért a kimenet kikapcsol, és a
 ## Gyakorlás
 
 👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
+
+## Próbáld meg önállóan!
+
+Mielőtt megnézed vagy letöltöd a kész projektfájlt, **próbáld meg önállóan elkészíteni a kapcsolást a PLCPractice szimulátorban, majd próbáld ki a működését!**
+
+Ne aggódj, ha elsőre nem sikerül! A hibakeresés és a próbálkozás a PLC-programozás megtanulásának fontos része.
+
+### Elakadtál?
+
+Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldalon](https://plc-fanatic.webnode.hu/kapcsolat/)**.
+
+Írd meg:
+
+* melyik feladatnál akadtál el,
+* mit szerettél volna elérni,
+* mi történik helyette,
+* és lehetőleg küldj egy **képernyőképet a kapcsolásodról**.
+
+Így könnyebben meg tudjuk találni a hibát.
+
+---
+
+### Kész vagy? Működik a megoldásod? 
+
+Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
