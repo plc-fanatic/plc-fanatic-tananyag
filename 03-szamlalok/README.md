@@ -36,9 +36,20 @@ A Reset nullázza a számlálót és kikapcsolja a lámpát.
 ![Alap CTU számláló](szlo_alap.png)
 ---
 
-### PLCPractice projektfájl -> görgess lejjebb!
+## Gyakorlás
 
-### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
+---
+
+#### Letölthető PLCPractice projektfájl - az a program, amit a képen látsz -> görgess lejjebb!
+
+##### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+
+---
+
+<p align="center">
+  👉 <a href="https://plc-fanatic.webnode.hu/kapcsolat"><b>Elakadtál? Itt kérdezhetsz.</b></a>
+</p>
 
 ---
 
@@ -63,6 +74,10 @@ A vezérlés működése:
 
 ---
 
+### Egy lehetséges megoldás
+
+![Számlálás szalag](szlo_szalag.png)
+
 ### A működés elemzése
 
 A vezérlés működését négy részre bonthatjuk.
@@ -78,8 +93,6 @@ A `Stop` és a `Kesz` állapot megakadályozza a szalag indítását.
 ```text
 Start → [P] → Stop → [/] → Kesz → [/] → (S) Szalag
 ```
-
-
 
 #### 2. A munkadarabok számlálása
 
@@ -175,6 +188,20 @@ A 3.1-ben megtanult számláló már nem önálló gyakorlatként, hanem egy vez
 ## Gyakorlás
 
 👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
+---
+
+#### Letölthető PLCPractice projektfájl - az a program, amit a képen látsz -> görgess lejjebb!
+
+##### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+
+---
+
+<p align="center">
+  👉 <a href="https://plc-fanatic.webnode.hu/kapcsolat"><b>Elakadtál? Itt kérdezhetsz.</b></a>
+</p>
+
+---
+
 
 ## Próbáld meg önállóan!
 
@@ -201,8 +228,8 @@ Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldal
 
 Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
 
-👉 [2.1 Projektfájl letöltése](kesl_ton.json)
-👉 [2.2 Pjektfájl letöltése](kesl_motor.json)
+👉 [3.1 Projektfájl letöltése](szlo_alap.json)
+👉 [3.2 Pjektfájl letöltése](szlo_szalag.json)
 
 ---
 
