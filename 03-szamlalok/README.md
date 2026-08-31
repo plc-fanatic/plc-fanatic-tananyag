@@ -33,9 +33,14 @@ A Reset nullázza a számlálót és kikapcsolja a lámpát.
 
 ### Megoldás
 
-![Késleltetett motorindítás](szlo_alap.png)
+![Alap CTU számláló](szlo_alap.png)
+---
 
-************************
+### PLCPractice projektfájl -> görgess lejjebb!
+
+### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+
+---
 
 ## 3.2 – Darabszámlálás szállítószalagon
 
@@ -160,3 +165,50 @@ A feladat fő tanulságai:
 A lényeg nem az, hogy minél több PLC-elemet használjunk, hanem hogy lássuk:
 
 A 3.1-ben megtanult számláló már nem önálló gyakorlatként, hanem egy vezérlési folyamat részeként is használható.
+
+### PLCPractice projektfájl -> görgess lejjebb!
+
+### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
+
+---
+
+## Gyakorlás
+
+👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
+
+## Próbáld meg önállóan!
+
+Mielőtt megnézed vagy letöltöd a kész projektfájlt, **próbáld meg önállóan elkészíteni a kapcsolást a PLCPractice szimulátorban, majd próbáld ki a működését!**
+
+Ne aggódj, ha elsőre nem sikerül! A hibakeresés és a próbálkozás a PLC-programozás megtanulásának fontos része.
+
+### Elakadtál?
+
+Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldalon](https://plc-fanatic.webnode.hu/kapcsolat/)**.
+
+Írd meg:
+
+* melyik feladatnál akadtál el,
+* mit szerettél volna elérni,
+* mi történik helyette,
+* és lehetőleg küldj egy **képernyőképet a kapcsolásodról**.
+
+Így könnyebben meg tudjuk találni a hibát.
+
+---
+
+### Kész vagy? Működik a megoldásod? 
+
+Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
+
+👉 [2.1 Projektfájl letöltése](kesl_ton.json)
+👉 [2.2 Pjektfájl letöltése](kesl_motor.json)
+
+---
+
+Ha ***nem sikerül értelmezned a letöltött program működését*** vagy ***gondod van a PLCPractice szimulátor kezelésével***, szívesen segítek. 
+
+<p align="center">
+  👉 <a href="https://plc-fanatic.webnode.hu/kapcsolat"><b>Írj ide, ha kérdésed van!</b></a>
+</p>
+
