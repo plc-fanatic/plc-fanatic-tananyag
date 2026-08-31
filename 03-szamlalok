@@ -1,1 +1,36 @@
 
+## 3.2 – Darabszámlálás szállítószalagon
+
+### Feladat
+
+Egy szállítószalagon érkező munkadarabokat számolunk. A szalag indítása és leállítása mellett a vezérlésnek a munkadarabok darabszámát is figyelnie kell.
+
+A vezérlés működése:
+
+- A `Start` gomb megnyomására induljon el a `Szalag`.
+- A szalag működése közben az `Erzekelo` minden egyes munkadarab érkezését jelezze.
+- Egy munkadarab érkezése **egyetlen számlálást** eredményezzen.
+- A számláló elérésekor (`Preset = 5`) a `Done` kimenet jelezze, hogy elkészült a kívánt darabszám.
+- A `Done` jel hatására kapcsoljon be a `Kesz` állapot, és álljon le a szalag.
+- A `Stop` gomb bármikor leállíthatja a szalagot. A számláló értéke ilyenkor maradjon meg.
+- A `Start` gombbal a folyamat újraindítható, és a számlálás az addig elért értékről folytatódjon.
+- A `Reset` gomb új gyártási ciklust indít: a számláló álljon vissza `0` értékre, és a `Kesz` állapot törlődjön.
+
+> **Megjegyzés:** A feladatban a `Preset` értéke 5 darab. Ez a szimuláció és a tesztelés miatt praktikus; valódi termelési feladatban természetesen más darabszám is beállítható.
+
+---
+
+### A működés elemzése
+
+A vezérlés működését négy részre bonthatjuk.
+
+#### 1. A szalag indítása
+
+A `Start` gomb felfutó élére a `Szalag` bekapcsol.
+
+Ez azért fontos, mert a `Start` gomb megnyomva tartása nem jelenthet folyamatos új indítási parancsot. A vezérlésnek az **új megnyomást**, vagyis a jel felfutó élét kell érzékelnie.
+
+A `Stop` és a `Kesz` állapot megakadályozza a szalag indítását.
+
+```text
+Start ──[P]── Stop ──[/]── Kesz ──[/]── (S) Szalag
