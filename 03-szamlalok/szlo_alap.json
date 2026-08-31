@@ -1,0 +1,105 @@
+{
+  "id": "program-1788093330724",
+  "name": "Untitled Ladder Program",
+  "version": 1,
+  "tags": [
+    {
+      "name": "Szamol",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Reset",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Szamlalo",
+      "type": "COUNTER",
+      "category": "internal",
+      "description": "",
+      "initialValue": 0
+    },
+    {
+      "name": "Lampa",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "rung-1788175392719-szu7pc",
+      "comment": "Számolás felfelé, a Szamol 0->1 átmenetére (felfutó él - bekapcsolás)",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "OSR",
+          "tag": "Szamol"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Reset"
+        },
+        {
+          "kind": "counter",
+          "counterType": "CTU",
+          "tag": "Szamlalo",
+          "preset": 5
+        }
+      ]
+    },
+    {
+      "id": "rung-1788175456361-ydemr5",
+      "comment": "Ha a Szamlalo elérte a preset értéket (5) a lampa bekapcsol.",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szamlalo.Done"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTL",
+          "tag": "Lampa"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788175487414-occtjd",
+      "comment": "A Reset gomb törli a Szamlalo-t és a Lampa-t. (Alaphelyzet).",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Reset"
+        },
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "res",
+                "tag": "Szamlalo"
+              }
+            ],
+            [
+              {
+                "kind": "coil",
+                "coilType": "OTU",
+                "tag": "Lampa"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "hmiLayout": []
+}

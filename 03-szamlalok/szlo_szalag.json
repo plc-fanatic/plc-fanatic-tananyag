@@ -1,0 +1,204 @@
+{
+  "id": "program-1788093330724",
+  "name": "Untitled Ladder Program",
+  "version": 1,
+  "tags": [
+    {
+      "name": "Erzekelo",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Stop",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Szamlalo",
+      "type": "COUNTER",
+      "category": "internal",
+      "description": "",
+      "initialValue": 0
+    },
+    {
+      "name": "Szalag",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Reset",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Ertek",
+      "type": "INT",
+      "category": "internal",
+      "description": "",
+      "initialValue": 0
+    },
+    {
+      "name": "Start",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Kesz",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "rung-1788093781042-t4lmud",
+      "comment": "Szalag indítás - Start élfigyelése a benyomva felejtés miatt kell.",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "OSR",
+          "tag": "Start"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Reset"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Kesz"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTL",
+          "tag": "Szalag"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788093333511-iwmyoa",
+      "comment": "Munkadarab számlálás felfutó impulzusra.",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szalag"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Reset"
+        },
+        {
+          "kind": "contact",
+          "contactType": "OSR",
+          "tag": "Erzekelo"
+        },
+        {
+          "kind": "counter",
+          "counterType": "CTU",
+          "tag": "Szamlalo",
+          "preset": 5
+        }
+      ]
+    },
+    {
+      "id": "rung-1788094252515-z2nj47",
+      "comment": "5 db-nál Kész lámpa bekapcs.",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szamlalo.Done"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTL",
+          "tag": "Kesz"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788166312617-2ku4ze",
+      "comment": "A Szalag leállítása",
+      "elements": [
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Stop"
+              }
+            ],
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Reset"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTU",
+          "tag": "Szalag"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788093333870-852uup",
+      "comment": "A számláló törlése és a Kész állapot törlése",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Reset"
+        },
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "res",
+                "tag": "Szamlalo"
+              }
+            ],
+            [
+              {
+                "kind": "coil",
+                "coilType": "OTU",
+                "tag": "Kesz"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "hmiLayout": []
+}
