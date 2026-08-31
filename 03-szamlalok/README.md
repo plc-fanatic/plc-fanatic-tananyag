@@ -179,15 +179,6 @@ A lényeg nem az, hogy minél több PLC-elemet használjunk, hanem hogy lássuk:
 
 A 3.1-ben megtanult számláló már nem önálló gyakorlatként, hanem egy vezérlési folyamat részeként is használható.
 
-### PLCPractice projektfájl -> görgess lejjebb!
-
-### A projektfájl a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján!!!
-
----
-
-## Gyakorlás
-
-👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
 ---
 
 #### Letölthető PLCPractice projektfájl - az a program, amit a képen látsz -> görgess lejjebb!
@@ -196,12 +187,11 @@ A 3.1-ben megtanult számláló már nem önálló gyakorlatként, hanem egy vez
 
 ---
 
-<p align="center">
-  👉 <a href="https://plc-fanatic.webnode.hu/kapcsolat"><b>Elakadtál? Itt kérdezhetsz.</b></a>
-</p>
+## Gyakorlás
+
+👉 **[Nyisd meg a PLCPractice szimulátort](https://www.plcpractice.com/simulator), és építsd meg te is.**
 
 ---
-
 
 ## Próbáld meg önállóan!
 
