@@ -1,0 +1,257 @@
+{
+  "id": "program-1788093330724",
+  "name": "Untitled Ladder Program",
+  "version": 1,
+  "tags": [
+    {
+      "name": "Start",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Stop",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Szalag_1",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Idozito",
+      "type": "TIMER",
+      "category": "internal",
+      "description": "",
+      "initialValue": 0
+    },
+    {
+      "name": "Szalag_2",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Run",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Kesz",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Szamlalo",
+      "type": "COUNTER",
+      "category": "internal",
+      "description": "",
+      "initialValue": 0
+    },
+    {
+      "name": "Erzekelo",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Reset",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "rung-1788264874178-xpq3g3",
+      "comment": "Motor_1 indítása",
+      "elements": [
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Start"
+              }
+            ],
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Run"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Kesz"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Run"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788269945762-jsc349",
+      "comment": "",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Run"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Kesz"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Szalag_1"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788264910099-5587t6",
+      "comment": "Időzítés indítása",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szalag_1"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "timer",
+          "timerType": "TON",
+          "tag": "Idozito",
+          "preset": 3000
+        }
+      ]
+    },
+    {
+      "id": "rung-1788264928721-vbzbgx",
+      "comment": "Motor_2 indítása",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Run"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szalag_1"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Idozito.Done"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Szalag_2"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788266288876-5z0672",
+      "comment": "Erzekelo felfutó impulzusainak számlálása, ha megy mindkét szalag.",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szalag_2"
+        },
+        {
+          "kind": "contact",
+          "contactType": "OSR",
+          "tag": "Erzekelo"
+        },
+        {
+          "kind": "counter",
+          "counterType": "CTU",
+          "tag": "Szamlalo",
+          "preset": 5
+        }
+      ]
+    },
+    {
+      "id": "rung-1788270197763-1aun1o",
+      "comment": "Kesz jelzés",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Szamlalo.Done"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Kesz"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788270270213-zxwaw4",
+      "comment": "Alaphelyzetbe állítás (reset).",
+      "elements": [
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Run"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIC",
+          "tag": "Reset"
+        },
+        {
+          "kind": "res",
+          "tag": "Szamlalo"
+        }
+      ]
+    }
+  ],
+  "hmiLayout": []
+}
