@@ -1,0 +1,125 @@
+{
+  "id": "program-1788093330724",
+  "name": "Untitled Ladder Program",
+  "version": 1,
+  "tags": [
+    {
+      "name": "Start_1",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Start_2",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Stop",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Motor_1",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    },
+    {
+      "name": "Motor_2",
+      "type": "BOOL",
+      "category": "internal",
+      "description": "",
+      "initialValue": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "rung-1788264236637-qdj9c2",
+      "comment": "Motor_1 indítása",
+      "elements": [
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Start_1"
+              }
+            ],
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Motor_1"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Motor_2"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Motor_1"
+        }
+      ]
+    },
+    {
+      "id": "rung-1788264292915-ivh0ms",
+      "comment": "Motor_2 indítása",
+      "elements": [
+        {
+          "kind": "branch",
+          "paths": [
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Start_2"
+              }
+            ],
+            [
+              {
+                "kind": "contact",
+                "contactType": "XIC",
+                "tag": "Motor_2"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Stop"
+        },
+        {
+          "kind": "contact",
+          "contactType": "XIO",
+          "tag": "Motor_1"
+        },
+        {
+          "kind": "coil",
+          "coilType": "OTE",
+          "tag": "Motor_2"
+        }
+      ]
+    }
+  ],
+  "hmiLayout": []
+}
