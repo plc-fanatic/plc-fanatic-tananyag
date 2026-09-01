@@ -109,7 +109,7 @@ Kesz = OFF
 
 ### PLCPractice projektfájl -> görgess lejjebb!
 
-#### A projektfájl (ez a ladder program, amit itt látsz a képen) a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján és próbáld ki!!!
+#### A projektfájl (ez a ladder program, amit itt látsz a képen) a szimulátorban megnyitható és a működés tesztelhető - de először próbáld létrehozni a kapcsolást a rajz alapján és próbáld ki a működését!
 
 ---
 
