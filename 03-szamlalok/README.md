@@ -219,7 +219,7 @@ Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldal
 Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
 
 👉 [3.1 Projektfájl letöltése](szlo_alap.json)
-👉 [3.2 Pjektfájl letöltése](szlo_szalag.json)
+👉 [3.2 Projektfájl letöltése](szlo_szalag.json)
 
 ---
 
