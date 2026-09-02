@@ -97,7 +97,7 @@ Ha nem sikerül megoldanod a feladatot, **[kérj segítséget a kapcsolati oldal
 Ha elkészültél, vagy szeretnéd ellenőrizni a saját megoldásodat, töltsd le a **PLCPractice-ben betölthető projektfájlt**:
 
 👉 [2.1 Projektfájl letöltése](kesl_ton.json)
-👉 [2.2 Pjektfájl letöltése](kesl_motor.json)
+👉 [2.2 Projektfájl letöltése](kesl_motor.json)
 
 ---
 
