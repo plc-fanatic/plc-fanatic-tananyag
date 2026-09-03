@@ -154,7 +154,7 @@ Kesz = OFF
 A `Szalag_1` akkor működik, ha a folyamat aktív, és még nem készült el az előírt darabszám.
 
 ```text
-Folyamat → [ ] → Kesz → [/] → ( Szalag_1 )
+Folyamat → [ ] → Stop → [/] → Kesz → [/] → ( Szalag_1 )
 ```
 
 Amikor a `Kesz` jel bekapcsol, a Szalag_1 leáll.
@@ -191,7 +191,7 @@ Kesz = OFF
 A Ladder-logika:
 
 ```text
-Szalag_1 → [ ] → Idozito.Done → [ ] → Kesz → [/] → ( Szalag_2 )
+Folyamat → [ ] → Szalag_1 → [ ] → Idozito.Done → [ ] → Stop → [/] → Kesz → [/] → ( Szalag_2 )
 ```
 
 Ez egyben reteszelés is.
